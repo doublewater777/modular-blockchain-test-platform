@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>模块化区块链测试平台</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+</head>
+<body>
+
+    <h1>模块化区块链测试平台</h1>
+<form method="post">
+    <p>请选择hash函数：</p>
+    <input type="radio" id="Keccak" name="hashAlg" value="Keccak" checked>
+    <label for="Keccak">Keccak</label><br>
+    <input type="radio" id="hashAlg" name="hashAlg" value="SM3">
+    <label for="SM3">SM3</label><br>
+    <br>
+    <p>请选择签名函数：</p>
+    <input type="radio" id="Secp256k1" name="signAlg" value="Secp256k1" checked>
+    <label for="Secp256k1">Secp256k1</label><br>
+    <input type="radio" id="SM2" name="signAlg" value="SM2">
+    <label for="SM2">SM2</label><br> <br>
+    <input class="btn" type="submit" name="submit" value="确定生成区块">
+</form>
+
+{% if InputsConfig %}
+<h2>基本配置信息</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Block Time</th>
+        <th>Block Propagation Delay</th>
+        <th>No. Miners</th>
+        <th>Simulation Time</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>{{ InputsConfig.Binterval }}</td>
+          <td>{{ InputsConfig.Bdelay }}</td>
+          <td>{{ InputsConfig.NODES | length}}</td>
+          <td>{{ InputsConfig.simTime }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endif %}  {# 大部分 Jinja 语句都需要声明关闭 #}
+
+{% if blocksResults %}
+<h2>blocksResults</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Total Blocks</th>
+        <th>Main Blocks</th>
+        <th>Uncle blocks</th>
+        <th>Uncle Rate</th>
+        <th>Stale Blocks</th>
+        <th>Stale Rate</th>
+        <th>transactions</th>
+        <th>Performance Time</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          {% for row in blocksResults %} 
+            {% for col in row %}
+            <td>{{ col }}</td>
+            {% endfor %}
+          {% endfor %}  
+        </tr>
+    </tbody>
+</table>
+{% endif %}  
+
+{% if Profit %}
+<h2>Profit</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Miner ID</th>
+        <th>% Hash Power</th>
+        <th># Mined Blocks</th>
+        <th>% of main blocks</th>
+        <th># Uncle Blocks</th>
+        <th>% of uncles</th>
+        <th>Profit (in ETH)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in Profit %}
+        <tr>
+            {% for col in row %}
+            <td>{{ col }}</td>
+            {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
+{% endif %}  {# 大部分 Jinja 语句都需要声明关闭 #}
+
+{% if Chain %}
+<h2>Chain</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Block Depth</th>
+        <th>Block ID</th>
+        <th>Previous Block</th>
+        <th>Block Timestamp</th>
+        <th>Miner ID</th>
+        <th># transactions</th>
+        <th>Block Limit</th>
+        <th>Uncle Blocks</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in Chain %}
+        <tr>
+            {% for col in row %}
+            <td>{{ col }}</td>
+            {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>
+  
+{% endif %}  {# 大部分 Jinja 语句都需要声明关闭 #}
+
+{% if bio %}
+    <p>{{ bio }}</p>  {# 这里的缩进只是为了可读性，不是必须的 #}
+{% else %}
+    <p>自我介绍为空。</p>
+{% endif %}  {# 大部分 Jinja 语句都需要声明关闭 #}
+    
+</body>
+</html>
