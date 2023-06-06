@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2023-06-06T12:58:50.972Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="qs9P8K0YYu732g-ZRQTZ" version="21.3.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-06T13:26:41.516Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="t3kVvdTxmVAcgIuVa3ju" version="21.3.5" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="GdsqH7Vu9YX9QgZSqa-b-1" value="网络层&lt;br&gt;（节点、网络延迟、广播协议）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="180" width="220" height="60" as="geometry" />
+          <mxGeometry x="160" y="80" width="450" height="100" as="geometry" />
         </mxCell>
         <mxCell id="GdsqH7Vu9YX9QgZSqa-b-2" value="共识层&lt;br&gt;（共识算法（PoW,PoS)，生成区块，分叉解决）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="240" width="220" height="70" as="geometry" />
+          <mxGeometry x="160" y="180" width="450" height="100" as="geometry" />
         </mxCell>
         <mxCell id="GdsqH7Vu9YX9QgZSqa-b-3" value="激励层&lt;br&gt;（分配奖励）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="310" width="220" height="60" as="geometry" />
+          <mxGeometry x="160" y="280" width="450" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
