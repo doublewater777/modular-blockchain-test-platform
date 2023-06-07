@@ -1,9 +1,33 @@
-<mxfile host="app.diagrams.net" modified="2023-06-07T07:03:07.167Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" version="21.3.7" etag="BVgD0KRIWYBC8VJ07dqr" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-07T07:19:31.108Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="m9wh5oT_B5Gm8Br4uBM-" version="21.3.7" type="github">
   <diagram name="第 1 页" id="NnTojj8q1qMAuuBCgICk">
-    <mxGraphModel>
+    <mxGraphModel dx="1050" dy="485" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="lAwEwXb-V4Mf9sJb9njl-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="lAwEwXb-V4Mf9sJb9njl-2" target="lAwEwXb-V4Mf9sJb9njl-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lAwEwXb-V4Mf9sJb9njl-2" value="配置模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="140" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lAwEwXb-V4Mf9sJb9njl-4" value="网络模块&lt;br&gt;（节点、网络、延迟）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="200" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lAwEwXb-V4Mf9sJb9njl-6" value="共识模块&lt;br&gt;（区块、交易、共识算法）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="250" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lAwEwXb-V4Mf9sJb9njl-7" value="激励模块&lt;br&gt;（计算/分发奖励）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="300" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lAwEwXb-V4Mf9sJb9njl-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lAwEwXb-V4Mf9sJb9njl-8" target="lAwEwXb-V4Mf9sJb9njl-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lAwEwXb-V4Mf9sJb9njl-8" value="模拟模块&lt;br&gt;(主函数、事件、调度器、统计)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="420" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lAwEwXb-V4Mf9sJb9njl-10" value="通信模块&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;（http请求）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="350" width="110" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
